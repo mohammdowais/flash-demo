@@ -25,7 +25,6 @@ app.get('/', function(req, res){
 app.get('/success-flash', function(req, res){
   req.flash('message', ['User added successfully!','success'])
   res.redirect('/');
-  console.log(req.session)
 });
 
 app.get('/no-flash', function(req, res){
